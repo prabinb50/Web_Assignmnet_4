@@ -1,0 +1,151 @@
+/* General Body Styling */
+section {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 113vh;
+    margin: 0;
+    width: 100%;
+}
+
+/* Donation Form Container Styling */
+.donation-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 349px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* Donation Frequency Styling */
+.donation-frequency label {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.frequency-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.frequency-options button {
+    background-color: #e0f0f5;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.frequency-options button.active {
+    background-color: #607d8b;
+    color: white;
+}
+
+.frequency-options button:last-child {
+    margin-right: 0;
+}
+
+/* Select Amount Styling */
+.select-amount label {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.amount-options button,
+.amount-options input[type="text"] {
+    background-color: #e0f0f5;
+    border: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95px;
+    text-align: center;
+}
+
+.amount-options button.active {
+    background-color: #607d8b;
+    color: white;
+}
+
+/* Personal Info Styling */
+.personal-info label {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.personal-info input {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Choose Payment Styling */
+.choose-payment label {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.payment-options {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.payment-options label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    background-color: #607d8b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.payment-options label.selected {
+    font-weight: bold;
+    color: #607d8b;
+}

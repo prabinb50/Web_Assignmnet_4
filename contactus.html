@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/conatctus.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="img-div">
+                    <img src="images/logo.png" alt="" />
+                </div>
+                <div>
+                    <h2>MindCare Hub</h2>
+                </div>
+            </div>
+            <div class="mobile-nav-btn">
+                <button onclick="openNav()">
+                    <img src="images/Hamburger_icon.svg.png" alt="" />
+                </button>
+            </div>
+            <div id="mobile-nav" class="mobile-nav">
+                <div class="cross-icon">
+                    <button onclick="closeNav()">
+                        <svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 490 490" xml:space="preserve">
+                            <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 
+                            489.292,457.678 277.331,245.004 489.292,32.337 " />
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="resourcelibrary.html">Resources Library</a></li>
+                    <li><a href="interactiveTools.html">Interactive Tools</a></li>
+                    <li><a href="quizes.html">Quizes</a></li>
+                    <li><a href="stress.html">Exercises</a></li>
+                    <li><a href="campaign.html" >Campaign</a></li>
+                    <li><a href="emergencyService.html">Emergency Service</a></li>
+                    <li><a href="contactus.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--end of header -->
+
+    <div class="container">
+        <h2>Emergency Contact Information</h2>
+        <p>Reach out to us immediately for any emergency assistance or support.</p>
+
+        <div class="form-container">
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.780623991012!2d85.36391707434615!3d27.738987379659575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d84b204a9%3A0xa88c04f5c2e50fe2!2sKhari%20Bot%2C%20Kapan%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1698076675839!5m2!1sen!2snp"
+                    width="300" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <label>Address:</label>
+                <input type="text" value="Kapan, Kathmandu" readonly>
+
+                <label>Phone number:</label>
+                <input type="text" value="9824750447" readonly>
+
+                <label>Gmail:</label>
+                <input type="text" value="tmgdgash@gmail.com" readonly>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="card">
+                <div class="first-section">
+                    <div class="img-div">
+                        <img src="images/logo.png" alt="" />
+                    </div>
+                    <h2 class="title">MindCare Hub</h2>
+                </div>
+            </div>
+
+            <div class="card quick-links-section">
+                <div>
+                    <h2 class="">QUICK LINKS</h2>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="resourcelibrary.html">Resources Library</a></li>
+                        <li><a href="interactiveTools.html">Interactive Tools</a></li>
+                        <li><a href="quizes.html">Quizes</a></li>
+                        <li><a href="stress.html">Exercises</a></li>
+                        <li><a href="campaign.html" >Campaign</a></li>
+                        <li><a href="emergencyService.html">Emergency Service</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card social-media-section">
+                <div class="">
+                    <h2 class="">Socials</h2>
+                    <div class="social-medias">
+                        <div class="facebook-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="instagram-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <h2>
+            Copyright © 2024 <span>MindCare Hub</span>. All Rights Reserved
+        </h2>
+    </div>
+    <!--end of footer section -->
+
+</body>
+
+<script>
+    function closeNav() {
+        var mobileNav = document.getElementById("mobile-nav");
+        mobileNav.classList.remove("active");
+    }
+    function openNav() {
+        var mobileNav = document.getElementById("mobile-nav");
+        mobileNav.classList.add("active");
+    }
+
+</script>
+
+<script>
+    document.querySelector(".contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+    alert("Thank you for reaching out! We will respond to your message shortly.");
+});
+</script>
+
+</html>

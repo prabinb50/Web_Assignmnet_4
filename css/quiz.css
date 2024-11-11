@@ -1,0 +1,223 @@
+/* Global Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; 
+} */
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    flex: 1; /* Allows the container to grow and take up available space */
+}
+
+
+/* Quiz Section */
+.quiz-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.quiz-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.question label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.question select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 40px;
+    display: none; /* Initially hidden */
+}
+
+canvas {
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.feedback {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feedback.low {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.feedback.high {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+.recommendations {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations ul {
+    list-style-type: none;
+}
+
+.recommendations ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* General Styling for the Info Section */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #f0f0f0; /* Light background above the footer */
+}
+
+.info-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-container h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info-container p, 
+.info-container ul, 
+.info-container li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-us {
+    flex: 1.5; /* About Us gets a bit more space */
+    text-align: center;
+    
+
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: black; /* Link color */
+    transition: color 0.3s ease;
+}
+
+.resources ul li a:hover {
+    color: #062c55; /* Link hover effect */
+}
+
+.get-in-touch a {
+    color: #333; /* Phone and email links color */
+    text-decoration: none;
+    text-align: center;
+}
+
+.get-in-touch a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-container {
+        padding: 10px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-section {
+        padding: 40px 20px;
+    }
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #017562;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color:#297a6c;
+}

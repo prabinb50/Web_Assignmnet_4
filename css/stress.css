@@ -1,0 +1,172 @@
+/* Ensure the flash cards are below the heading and centered */
+#stress-management {
+    text-align: center;
+    padding: 1px;
+    box-sizing: border-box;
+    height: 138rem;
+}
+
+/* Style for the heading "Manage Your Stress" */
+#Stress {
+    font-size: 48px;
+    color: #789DBC;
+    margin-bottom: 40px; /* Increased spacing below the heading */
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    text-shadow: 
+    2px 2px 0px rgba(255, 227, 227, 1), 
+    4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+#Stress {
+    margin-bottom: 17px; /* Increased spacing below the heading */
+    display: inline-flex; /* Ensure icon and text stay in the same line */
+    align-items: center; /* Vertically align the icon and text */
+}
+.flash-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increased gap between flash cards */
+}
+
+
+/* Style for the individual flash cards */
+.flash-card {
+    background-color: #C9E9D2; /* Light green background */
+    border: 2px solid #789DBC; /* Teal border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 571px; /* Fixed width */
+    height: 340px; /* Fixed height */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the card horizontally */
+    position: relative;
+}
+
+/* Title of the exercises */
+.flash-card #exercise-text {
+    font-weight: bold;
+    font-size: 30px; /* Larger font for exercise names */
+    color: #333; /* Darker gray for text */
+    margin-bottom: 10px; /* Adjusted spacing */
+    margin-right: 232px;
+    width: 100%;
+    text-align: justify;
+
+}
+
+/* Description styling */
+.flash-card .description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin: 23px 0;
+    width: 313px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* Timer circle on the right side */
+.flash-card div[id^="timer-"] {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 3px solid #789DBC;
+    border-radius: 50%;
+    display: block;
+    position: absolute; /* Use absolute positioning for better control */
+    top: 50%; /* Center vertically */
+    right: 55px; /* Adjust the horizontal position */
+    transform: translateY(-50%); /* Vertically align */
+    font-size: 18px;
+    color: #789DBC;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 100px;
+}
+
+/* Start Button below the description */
+#start-timer-1 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+
+#start-timer-2 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+
+#start-timer-3 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#start-timer-4 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#start-timer-5 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#stress-management button:hover {
+    background-color: #56789A;
+}
+
+/* Timer font styling */
+#timer {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #789DBC; /* Timer color */
+    font-weight: bold;
+}
+
+/* Ensure the stress icon aligns with the text in the heading */
+.stress-icon {
+    width: 109px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the icon with the middle of the text */
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
+
